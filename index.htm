@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <ul id="ul">
+      <li>CIao</li>
+      <li>No</li>
+      <li>Si</li>
+    </ul>
+
+    <script>
+        document.getElementById("ul").addEventListener("mouseenter", function(){
+            document.getElementById("body").style.backgroundColor = "blue";
+        });
+
+        document.getElementById("ul").addEventListener("mouseleave", function(){
+            document.getElementById("body").style.backgroundColor = "red";
+        });
+    </script>
+</body>
+</html>
